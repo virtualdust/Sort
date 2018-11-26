@@ -12,6 +12,7 @@ def quickSort(L, low, high):
             i = i + 1
         L[j] = L[i]
     L[i] = key
+    print(L)
     quickSort(L, low, i-1)
     quickSort(L, j+1, high)
     return L
